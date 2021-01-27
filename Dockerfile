@@ -1,4 +1,6 @@
-FROM wordpress:php7.3-apache
+ARG WORDPRESS_IMAGE=wordpress:php7.4-apache
+
+FROM ${WORDPRESS_IMAGE}
 
 LABEL maintainer="dev@crowdlinker.com"
 
